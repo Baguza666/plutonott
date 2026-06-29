@@ -1,0 +1,189 @@
+@import "tailwindcss";
+
+/*
+ * Pluton OTT — Design System
+ * System fonts only (no remote downloads). Mobile-first. CSS ≤ 50 KB gzipped.
+ */
+
+@theme {
+  --font-sans:
+    ui-sans-serif,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    "Helvetica Neue",
+    Arial,
+    "Noto Sans",
+    sans-serif,
+    "Apple Color Emoji",
+    "Segoe UI Emoji",
+    "Segoe UI Symbol",
+    "Noto Color Emoji";
+
+  --font-mono:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    Monaco,
+    Consolas,
+    "Liberation Mono",
+    "Courier New",
+    monospace;
+
+  /* ── Dark surfaces ──────────────────────────────── */
+  --color-ink:   #090E1B;   /* deep navy — dark section bg           */
+  --color-ink-2: #101726;   /* card bg inside dark zones             */
+  --color-ink-3: #1E2D47;   /* borders / dividers inside dark zones  */
+
+  /* ── Light surfaces (now inverted to Dark Mode) ─── */
+  --color-paper:   #050505;   /* deep cinematic black  */
+  --color-paper-2: #1E293B;   /* dark slate border     */
+
+  /* ── Brand accent — electric indigo / cyan ──────── */
+  --color-signal:   #06b6d4;   /* cyan-500 */
+  --color-signal-2: #0891b2;   /* hover */
+
+  /* ── WhatsApp green — reserved for WA CTAs only ─── */
+  --color-wa:   #25D366;
+  --color-wa-2: #1FB855;   /* hover */
+
+  /* ── Semantic text ──────────────────────────────── */
+  --color-on-ink:    #DDE4F0;   /* primary text on dark              */
+  --color-dim-ink:   #8A96B8;   /* secondary / muted text on dark    */
+  --color-on-paper:  #F8FAFC;   /* primary text on light (now dark)  */
+  --color-dim-paper: #94A3B8;   /* secondary / muted text            */
+}
+
+/* ── Animations et utilitaires CSS ────────────────── */
+
+@keyframes fade-up {
+  0% { opacity: 0; transform: translateY(20px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-up {
+  animation: fade-up 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+.text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #22d3ee 0%, #3b82f6 50%, #8b5cf6 100%);
+}
+
+.text-gradient-dark {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(135deg, #67e8f9 0%, #3b82f6 50%, #c084fc 100%);
+}
+
+/* ── Scrollytelling & Parallax Animations ─────────── */
+@keyframes scrolly-animate-in {
+  0% { opacity: 0; transform: scale(0.9) translateY(40px) rotateX(-5deg); }
+  100% { opacity: 1; transform: scale(1) translateY(0) rotateX(0deg); }
+}
+
+.scrolly-section {
+  animation: fade-up 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@supports ((animation-timeline: view()) and (animation-range: entry)) {
+  .scrolly-section {
+    animation: scrolly-animate-in linear both;
+    animation-timeline: view();
+    animation-range: entry 10% cover 30%;
+    perspective: 1000px;
+  }
+}
+
+@keyframes float-orb {
+  0%, 100% { transform: translateY(0) scale(1); }
+  50% { transform: translateY(-30px) scale(1.1); }
+}
+.animate-float {
+  animation: float-orb 8s ease-in-out infinite;
+}
+
+/* ── Signal dot animation (logo badge) ─────────────── */
+@keyframes pulse-signal {
+  0%, 100% { opacity: 1; }
+  50%       { opacity: 0.3; }
+}
+
+.signal-dot {
+  animation: pulse-signal 2.8s ease-in-out infinite;
+}
+
+/* ── Hub node pulse (hero SVG) ──────────────────────── */
+@keyframes node-hub {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%       { transform: scale(1.35); opacity: 0.65; }
+}
+
+.node-hub {
+  transform-box: fill-box;
+  transform-origin: center;
+  animation: node-hub 3.5s ease-in-out infinite;
+}
+
+/* ── Channel marquee ────────────────────────────────── */
+@keyframes marquee-left {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+
+@keyframes marquee-right {
+  from { transform: translateX(-50%); }
+  to   { transform: translateX(0); }
+}
+
+@keyframes marquee-up {
+  from { transform: translateY(0); }
+  to   { transform: translateY(-50%); }
+}
+
+@keyframes marquee-down {
+  from { transform: translateY(-50%); }
+  to   { transform: translateY(0); }
+}
+
+.animate-marquee-left {
+  animation: marquee-left 35s linear infinite;
+}
+
+.animate-marquee-right {
+  animation: marquee-right 35s linear infinite;
+}
+
+.animate-marquee-up {
+  animation: marquee-up 14s linear infinite;
+}
+
+.animate-marquee-down {
+  animation: marquee-down 14s linear infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .signal-dot          { animation: none; }
+  .node-hub            { animation: none; }
+  .animate-marquee-left  { animation: none; }
+  .animate-marquee-right { animation: none; }
+  .animate-marquee-up    { animation: none; }
+  .animate-marquee-down  { animation: none; }
+  
+  /* Accessibilité pour les nouvelles animations */
+  .scrolly-section {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+  .animate-fade-up {
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

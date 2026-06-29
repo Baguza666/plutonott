@@ -1,0 +1,9 @@
+{
+  "generatedAt": "2026-06-28T23:59:24.092Z",
+  "sourcesHash": "732b37c7f1386ea5f37308bff9e41bcbe6de6f483887876e556457dc03885ff3",
+  "counts": {
+    "totalBlocksParsed": 77,
+    "uniqueCanonicalRoutes": 69,
+    "variantsKept": 8
+  }
+}

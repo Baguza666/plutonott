@@ -1,0 +1,576 @@
+[
+  {
+    "path": "/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/tarifs-grossiste/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/fonctionnement-panel/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/installation/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/test-gratuit/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/abonnement/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/ott-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/iron-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/atlas-iptv/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "Le système de master reseller de Pluton OTT vous redonne le contrôle de vos finances."
+      },
+      {
+        "code": "SIDELOADING_INSTRUCTION",
+        "severity": "error",
+        "excerpt": "Guides officiels : Fini le sideloading risqué sur Firestick. Transmettez nos tutoriels pas-à-pas pour une configuration sécurisée."
+      },
+      {
+        "code": "THIRD_PARTY_TRADEMARK_REVIEW",
+        "severity": "warning",
+        "excerpt": "Route /comparatif/atlas-iptv/ contient potentiellement des marques tierces"
+      }
+    ]
+  },
+  {
+    "path": "/iptv-france/support/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "UNVERIFIED_UPTIME",
+        "severity": "error",
+        "excerpt": "Ne faites pas l'erreur de promettre une disponibilité de \"100% Uptime\"."
+      },
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "Ne faites pas l'erreur de promettre une disponibilité de \"100% Uptime\"."
+      }
+    ]
+  },
+  {
+    "path": "/iptv-france/diaspora/maroc/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/diaspora/tunisie/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/xtreme-hd-iptv/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ALL_CHANNELS_CLAIM",
+        "severity": "error",
+        "excerpt": "Contrôle régional : Contrairement aux plateformes promettant \"toutes les chaînes mondiales\", nous vous permettons de vérifier précisément l'accès aux "
+      },
+      {
+        "code": "THIRD_PARTY_TRADEMARK_REVIEW",
+        "severity": "warning",
+        "excerpt": "Route /comparatif/xtreme-hd-iptv/ contient potentiellement des marques tierces"
+      }
+    ]
+  },
+  {
+    "path": "/comparatif/smartone-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/cdiscount/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/pluton-ott/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/pure-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/set-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/king-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/flix-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/iptv-atlas-pro/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/trex-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/lion-ott/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/crystal-ott/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ALL_CHANNELS_CLAIM",
+        "severity": "error",
+        "excerpt": "Évitez les fausses affirmations : Formez vos sous-revendeurs à ne pas promettre \"toutes les chaînes premium sans coupure\", mais à garantir un accès vé"
+      },
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "Marge contrôlée : Un pack de crédits Master Reseller vous garantit un coût par ligne très faible. Vous déterminez ensuite le prix final (1 mois, 6 moi"
+      },
+      {
+        "code": "THIRD_PARTY_TRADEMARK_REVIEW",
+        "severity": "warning",
+        "excerpt": "Route /comparatif/crystal-ott/ contient potentiellement des marques tierces"
+      }
+    ]
+  },
+  {
+    "path": "/comparatif/xenon-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/mario-iptv/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "Panel Master Reseller FR"
+      },
+      {
+        "code": "UNIVERSAL_COMPATIBILITY",
+        "severity": "error",
+        "excerpt": "Compatibilité universelle : Générez des accès (Xtream Codes, M3U, ou portail MAG) qui se chargent parfaitement sur les meilleures applications de Smar"
+      },
+      {
+        "code": "THIRD_PARTY_TRADEMARK_REVIEW",
+        "severity": "warning",
+        "excerpt": "Route /comparatif/mario-iptv/ contient potentiellement des marques tierces"
+      }
+    ]
+  },
+  {
+    "path": "/comparatif/lynk-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/orca-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/room-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/foxx-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/nox-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/smarter-one-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/smart-one-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/iptv-iron/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/iptv-nox/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/diaspora/iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/panel-administration/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/infrastructure-serveurs/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/devenir-revendeur-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/programme-master-reseller/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/politique-de-remboursement-b2b/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/conditions-generales-b2b/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "**Pluton OTT est un fournisseur d'infrastructure technologique B2B.** L'accès à notre panneau d'administration (Panel Master Reseller ou Sub-Reseller)"
+      },
+      {
+        "code": "UNVERIFIED_UPTIME",
+        "severity": "error",
+        "excerpt": "Obligations du revendeur : En tant que distributeur, vous vous engagez à ne pas faire de déclarations invérifiables (comme \"100% Uptime garanti\" ou \"T"
+      },
+      {
+        "code": "ALL_CHANNELS_CLAIM",
+        "severity": "error",
+        "excerpt": "Obligations du revendeur : En tant que distributeur, vous vous engagez à ne pas faire de déclarations invérifiables (comme \"100% Uptime garanti\" ou \"T"
+      }
+    ]
+  },
+  {
+    "path": "/revendeur/gestion-vod-series/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/api-xtream-codes/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/contact-commercial/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/qui-sommes-nous/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/integration-api-revendeur/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/comment-devenir-meilleur-revendeur-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/guide-configuration-smart-tv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/guide-configuration-firestick/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "SIDELOADING_INSTRUCTION",
+        "severity": "error",
+        "excerpt": "**L'Amazon Firestick est l'appareil préféré de vos clients, mais les règles changent.** Avec près de 300 millions de dispositifs Fire TV vendus dans l"
+      },
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "Puissance de traitement : Leurs processeurs gèrent les flux HLS et DASH, ainsi que la mise à l'échelle matérielle (upscaling) de 1080p à 4K bien mieux"
+      }
+    ]
+  },
+  {
+    "path": "/revendeur/gestion-anti-buffering/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "**La perte d'un signal pendant un événement majeur détruit votre entreprise.** Le premier facteur de désabonnement (churn) dans l'industrie de l'IPTV "
+      },
+      {
+        "code": "UNVERIFIED_UPTIME",
+        "severity": "error",
+        "excerpt": "Les vendeurs novices promettent du \"100% Uptime garanti\". Vous, en tant que professionnel B2B, devez gérer les attentes de manière réaliste."
+      }
+    ]
+  },
+  {
+    "path": "/revendeur/choisir-entre-sub-reseller-et-master/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/securite-anti-blocage/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ISP_BYPASS_INSTRUCTION",
+        "severity": "error",
+        "excerpt": "Route explicitement bloquée par la policy"
+      }
+    ]
+  },
+  {
+    "path": "/iptv-france/compatibilite-fai/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/vod-series-revendeur/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/api-developpement/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/revendeur/tutoriels-video/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/iptv-france/faq-revendeur/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/majestic-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/z2u-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/cover-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/elon-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/iplay-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/lynx-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/comparatif/platinum-iptv/",
+    "status": "blocked",
+    "noindex": true,
+    "issues": [
+      {
+        "code": "ENGLISH_VISIBLE_COPY",
+        "severity": "warning",
+        "excerpt": "Niveau Master Reseller : Gérez vos partenaires et votre distribution depuis une interface centralisée lorsque cette fonction est incluse dans votre of"
+      },
+      {
+        "code": "ALL_CHANNELS_CLAIM",
+        "severity": "error",
+        "excerpt": "Évitez les expressions comme « toutes les chaînes garanties » ou « aucune coupure possible »."
+      },
+      {
+        "code": "THIRD_PARTY_TRADEMARK_REVIEW",
+        "severity": "warning",
+        "excerpt": "Route /comparatif/platinum-iptv/ contient potentiellement des marques tierces"
+      }
+    ]
+  },
+  {
+    "path": "/comparatif/max-ott/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/test-iptv-gratuit-24h/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/meilleur-lecteur-application-iptv/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/iptv-france-guide-revendeur/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/ott-iptv-difference-guide/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/iptv-premium-4k-revendeur/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  },
+  {
+    "path": "/blog/iptv-maroc-tunisie-revendeur/",
+    "status": "approved",
+    "noindex": false,
+    "issues": []
+  }
+]

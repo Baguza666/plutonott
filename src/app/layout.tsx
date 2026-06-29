@@ -1,0 +1,60 @@
+import type { Metadata } from "next";
+import "./globals.css";
+import JsonLd from "../components/seo/JsonLd";
+import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/seo/json-ld";
+import { getSiteUrl } from "../lib/seo/site-url";
+import { CRITICAL_CSS } from "../styles/critical-css";
+import { SiteShell } from "../components/layout/SiteShell";
+
+/**
+ * Métadonnées par défaut — serveur uniquement.
+ */
+export const metadata: Metadata = {
+  metadataBase: new URL(getSiteUrl()),
+  title: {
+    default: "Pluton OTT — Panel Grossiste IPTV B2B",
+    template: "%s | Pluton OTT",
+  },
+  description: "Panel B2B francophone pour revendeurs et grossistes IPTV. Gérez vos lignes, générez des accès multi-serveurs et développez votre activité de revendeur IPTV.",
+};
+
+const systemFontStack = [
+  "ui-sans-serif",
+  "system-ui",
+  "-apple-system",
+  "BlinkMacSystemFont",
+  '"Segoe UI"',
+  "Roboto",
+  '"Helvetica Neue"',
+  "Arial",
+  '"Noto Sans"',
+  "sans-serif",
+  '"Apple Color Emoji"',
+  '"Segoe UI Emoji"',
+  '"Segoe UI Symbol"',
+  '"Noto Color Emoji"',
+].join(", ");
+
+export default function RootLayout({
+  children,
+}: Readonly<{
+  children: React.ReactNode;
+}>) {
+  const orgSchema = generateOrganizationSchema();
+  const webSiteSchema = generateWebSiteSchema();
+
+  return (
+    <html lang="fr">
+      <head>
+        {/* Injection du CSS Critique pour un LCP rapide sans CLS */}
+        <style data-critical-css dangerouslySetInnerHTML={{ __html: CRITICAL_CSS }} />
+      </head>
+      <body style={{ fontFamily: systemFontStack }}>
+        <JsonLd data={[orgSchema, webSiteSchema]} />
+        <SiteShell sourcePath="/">
+          {children}
+        </SiteShell>
+      </body>
+    </html>
+  );
+}

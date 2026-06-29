@@ -1,0 +1,25 @@
+{
+  "ci": {
+    "collect": {
+      "url": [
+        "http://localhost:3000/",
+        "http://localhost:3000/tarifs-grossiste/",
+        "http://localhost:3000/comparatif/iron-iptv/"
+      ],
+      "startServerCommand": "npm run serve",
+      "startServerReadyPattern": "Ready on",
+      "numberOfRuns": 3
+    },
+    "assert": {
+      "assertions": {
+        "largest-contentful-paint": ["error", { "maxNumericValue": 2500 }],
+        "cumulative-layout-shift": ["error", { "maxNumericValue": 0.001 }],
+        "total-blocking-time": ["error", { "maxNumericValue": 150 }],
+        "categories:performance": ["error", { "minScore": 0.92 }]
+      }
+    },
+    "upload": {
+      "target": "temporary-public-storage"
+    }
+  }
+}
