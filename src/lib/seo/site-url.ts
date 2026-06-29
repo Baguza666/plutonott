@@ -6,9 +6,14 @@ export function getSiteUrl(): string {
     return 'http://localhost:3000';
   }
 
-  const url = process.env.NEXT_PUBLIC_SITE_URL;
-  if (!url || !url.startsWith('https://')) {
-    throw new Error('NEXT_PUBLIC_SITE_URL is required in production and must start with https://');
+  let url = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL || process.env.NEXT_PUBLIC_VERCEL_URL;
+  
+  if (!url) {
+    url = 'https://plutonott.vercel.app'; // Fallback de sécurité
+  }
+
+  if (!url.startsWith('http')) {
+    url = `https://${url}`;
   }
 
   // Remove trailing slash if present to keep it clean before joining
