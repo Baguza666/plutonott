@@ -104,7 +104,7 @@ function TestimonialCard({ text }: { text: string }) {
 function StatsBand() {
   const stats = [
     { value: '20 000+', label: 'chaînes incluses' },
-    { value: '30', label: 'serveurs B2B' },
+    { value: '24', label: 'serveurs B2B' },
     { value: '60%', label: 'marge max revendeur' },
     { value: '100%', label: 'panel en français' },
   ];
@@ -143,10 +143,12 @@ function PaymentMethods() {
         </p>
         <div className="flex justify-center items-center gap-6 sm:gap-10 md:gap-12 flex-wrap">
           {methods.map(m => (
-            <img 
+            <Image
               key={m.alt}
-              src={m.src} 
-              alt={m.alt} 
+              src={m.src}
+              alt={m.alt}
+              width={80}
+              height={24}
               style={{ height: '24px', width: 'auto', objectFit: 'contain' }}
               title={m.alt}
             />

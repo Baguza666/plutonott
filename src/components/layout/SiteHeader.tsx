@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { SiteNavigation } from "./SiteNavigation";
 
 export function SiteHeader() {
@@ -18,7 +19,7 @@ export function SiteHeader() {
           className="flex items-center gap-1 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal rounded"
           aria-label="Pluton OTT — Retour à l'accueil"
         >
-          <img src="/pluton-ott.png" alt="Pluton OTT" style={{ height: '32px', width: 'auto', objectFit: 'contain' }} />
+          <Image src="/pluton-ott.png" alt="Pluton OTT" width={120} height={32} style={{ height: '32px', width: 'auto', objectFit: 'contain' }} priority />
         </Link>
 
         <SiteNavigation />

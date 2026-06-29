@@ -27,14 +27,10 @@ export function generatePageMetadata(options: GenerateMetadataOptions): Metadata
   const finalDescription = description || 'Découvrez nos infrastructures B2B adaptées aux professionnels.';
 
   return {
-    title: finalTitle,
+    title: { absolute: finalTitle },
     description: finalDescription,
     alternates: {
       canonical: absoluteCanonical,
-      languages: {
-        'fr': absoluteCanonical,
-        'x-default': absoluteCanonical,
-      },
     },
     openGraph: {
       title: finalTitle,

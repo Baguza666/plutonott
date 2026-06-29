@@ -48,6 +48,15 @@ export default function RootLayout({
       <head>
         {/* Injection du CSS Critique pour un LCP rapide sans CLS */}
         <style data-critical-css dangerouslySetInnerHTML={{ __html: CRITICAL_CSS }} />
+        <Script id="ms-clarity" strategy="afterInteractive">
+          {`
+            (function(c,l,a,r,i,t,y){
+                c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
+                t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;
+                y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);
+            })(window, document, "clarity", "script", "xeuv6u60ng");
+          `}
+        </Script>
       </head>
       <body style={{ fontFamily: systemFontStack }}>
         <JsonLd data={[orgSchema, webSiteSchema]} />

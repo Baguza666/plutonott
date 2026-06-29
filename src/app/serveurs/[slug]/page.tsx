@@ -4,6 +4,7 @@ import Link from 'next/link';
 import { notFound } from 'next/navigation';
 import { SERVERS_LIST, getServerByUrlSlug } from '../../../content/servers/servers.data';
 import WhatsAppCta from '../../../components/whatsapp/WhatsAppCta';
+import { getSiteUrl } from '../../../lib/seo/site-url';
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -25,10 +26,24 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
     };
   }
 
+  const siteUrl = getSiteUrl();
+  const canonicalUrl = `${siteUrl}/serveurs/${server.urlSlug}/`;
+
   return {
-    title: server.seoTitle,
+    title: { absolute: server.seoTitle },
     description: server.seoDescription,
     keywords: server.keywords.join(', '),
+    alternates: {
+      canonical: canonicalUrl,
+    },
+    openGraph: {
+      title: server.seoTitle,
+      description: server.seoDescription,
+      url: canonicalUrl,
+      siteName: 'Pluton OTT',
+      locale: 'fr_FR',
+      type: 'website',
+    },
   };
 }
 

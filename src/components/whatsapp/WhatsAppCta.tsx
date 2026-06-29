@@ -40,7 +40,7 @@ export default function WhatsAppCta({
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       className={mergedClasses}
       data-whatsapp-placement={placement}
       data-testid={`whatsapp-cta-${placement}`}

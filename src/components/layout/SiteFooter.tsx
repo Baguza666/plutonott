@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 
 const COLUMNS = [
   {
@@ -55,7 +56,7 @@ export function SiteFooter() {
               className="flex items-center gap-1 w-fit focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-signal rounded"
               aria-label="Pluton OTT — Retour à l'accueil"
             >
-              <img src="/pluton-ott.png" alt="Pluton OTT" style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
+              <Image src="/pluton-ott.png" alt="Pluton OTT" width={150} height={40} style={{ height: '40px', width: 'auto', objectFit: 'contain' }} />
             </Link>
             <p className="text-sm text-dim-ink leading-relaxed max-w-[240px]">
               La plateforme B2B de référence pour les revendeurs et grossistes IPTV en quête d&rsquo;infrastructures fiables.

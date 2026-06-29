@@ -9,7 +9,7 @@ export function getSiteUrl(): string {
   let url = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_PROJECT_PRODUCTION_URL || process.env.VERCEL_URL || process.env.NEXT_PUBLIC_VERCEL_URL;
   
   if (!url) {
-    url = 'https://plutonott.vercel.app'; // Fallback de sécurité
+    url = 'https://www.plutonott.com'; // Fallback de sécurité
   }
 
   if (!url.startsWith('http')) {
