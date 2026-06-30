@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import "./globals.css";
 import JsonLd from "../components/seo/JsonLd";
 import { generateOrganizationSchema, generateWebSiteSchema } from "../lib/seo/json-ld";
