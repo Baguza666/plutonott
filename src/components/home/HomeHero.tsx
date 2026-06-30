@@ -12,7 +12,7 @@ const SERVERS_COL_2 = [
 ];
 
 const STATS = [
-  '40+ chaînes internationales',
+  '20 000+ chaînes internationales',
   '24 serveurs B2B',
   'Panel 100% français',
 ];
